@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import random
+import pyperclip
 
 f = None
 
@@ -58,6 +59,7 @@ def save():
             entry1.delete(0, END)
             entry2.delete(0, END)
             entry3.delete(0, END)
+            pyperclip.copy(generated_password)
 
 
 
